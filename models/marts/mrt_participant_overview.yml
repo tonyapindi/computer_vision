@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mrt_participant_overview
+    description: "Combined participant summary with demographics, attendance, milestones, and dropout flag"
+    columns:
+      - name: youth_id
+        tests:
+          - not_null
+          - unique
+      - name: attendance_rate
+        description: "Percentage of sessions attended"
+      - name: potential_dropout
+        description: "Boolean indicating if participant is likely to drop out"

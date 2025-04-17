@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: mrt_venue_summary
+    description: "Venue-level summary including average attendance and dropout rate by location"
+    columns:
+      - name: venue_name
+        description: "Name of the training venue"
+      - name: avg_attendance_rate
+        description: "Average % of sessions attended by participants at the venue"
+      - name: dropout_rate_percent
+        description: "% of participants at the venue flagged as potential dropouts"
